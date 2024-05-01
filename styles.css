@@ -60,7 +60,7 @@ body, html {
 }
 
 #content-2 h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 30px;
@@ -99,14 +99,31 @@ body, html {
     }
 }
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .clickable-1, .clickable-2, .clickable-3, .clickable-4 {
     animation: pulse 3s infinite;
     cursor: pointer;
-}
-
-<!-- change this to animated moving -->
-.matter h1 {
-    animation: twinkle 4s infinite;
 }
 
 @keyframes twinkle {
@@ -133,7 +150,6 @@ body, html {
     margin-right: 20px;
     border: 1px dashed blueviolet;
     padding: 5px;
-
 }
 
 .text-container {
@@ -144,7 +160,6 @@ body, html {
     max-width: 100%;
     height: auto;
 }
-
 
 .matter-2 {
     display: flex;
@@ -163,10 +178,14 @@ body, html {
 }
 
 
-<!-- change this to animated moving -->
-.matter-2 h1 {
-    animation: pulse 4000ms infinite;
+.moving-text-1 {
+    animation: slideInFromRight 5s ease-in-out forwards;
 }
+
+.moving-text-2 {
+    animation: slideInFromLeft 5s ease-in-out forwards;
+}
+
 
 .matter-3 {
     position: relative;
@@ -176,8 +195,8 @@ body, html {
 
 .matter-3 img {
     align-items: center;
-    width: 100%;
-    height: 75%;
+    width: 75%;
+    height: 85%;
     border: 2px dashed white;
     padding: 5px;
 }
@@ -219,6 +238,33 @@ body, html {
     border: 1px solid white;
     padding: 5px;
 }
+
+.matter-4 {
+    border-top: 1px solid white;
+    padding: 50px;
+}
+
+.matter-4 h2 {
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+
+.clickable-3 a {
+    color: white;
+}
+
+ul li a {
+    color: #0077b6;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.h2-final {
+    color: darkslateblue;
+}
+
+
 
 
 

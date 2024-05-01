@@ -3,18 +3,11 @@
 
 <!--
 to-do:
-    add movement animations to h1
-    finish up conclusion div
     add some more text
     find bug in oribiting planet page
-    set links on hrefs
-    make <ul> and <ol> better
     get feedback of website
     stephen hawking div positioning? center or next to picture?
  -->
-
-
-
 
 
 
@@ -22,6 +15,7 @@ to-do:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>ID2 Main Project</title>
 </head>
@@ -37,6 +31,8 @@ to-do:
     <h1>One person in particular was born and founded some incredible discoveries about the observable universe</h1>
     <p>Let's take a closer look into who Stephen Hawking was.</p>
 </div>
+
+
 
 <div id="content-1">
     <div class="cosmologist">
@@ -63,18 +59,20 @@ to-do:
         <img src="pics/iss063e053998~large.jpg" alt="">
     </div>
     <div class="text-container">
-        <h1>So why should you care?</h1>
+        <h1 class = "moving-text-1">So why should you care?</h1>
         <p>The pursuit of space exploration are integral with human progress. It can help us understand our place
-        in the universe and why we are here in the first place.</p>
-        <p><i>And aren't you curious about what's out there?</i></i></p>
+        in the universe and why we are here in the first place. It can offer opportunities for scientific discoveries, innovation,
+        and humanity's collective knowledge.</p>
+        <p><i>Most importantly, aren't you curious about what's out there?</i></p>
     </div>
 </div>
 
 <div class = "matter-2">
     <div class="text-container-2">
-        <h1>How did Hawking assist in those difficult questions?</h1>
-        <p>His contributions directly contributed to advancing our understanding of the universe.
-        His work expanded our knowledge on weird anomalies like black holes or Hawking radiation.
+        <h1 class = "moving-text-2">How did Hawking assist in those difficult questions?</h1>
+        <p> Hawking made significant contributions to topics like black holes, cosmology, and theoretical physics. His research
+            shaped our understanding of some of the most complex and mysterious phenomena in the cosmos. His work played a crucial
+            role in advancing our understanding some of the universe's most intriguing questions.
         </p>
     </div>
     <div class="image-container-2" style="order: 2;">
@@ -88,17 +86,20 @@ to-do:
     <div class = "text-container-3">
         <h1> 19 December 1972</h1>
         <h2> The last time we reached the moon. </h2>
-        <h2> Don't you want humans to go beyond that?</h2>
+        <h2> Wouldn't it be cool if we went beyond?</h2>
     </div>
 </div>
 
+
 <div class = "matter-4">
-    <h1> Even though Hawking was affected by ALS, which is a fatal motor neuron disease, causing
-    the degeneration of nerve cells in the spinal cord and brain; he left behind a legacy.</h1>
-    <h1>"Remember to look up at the stars, and not down at your feet. Try to make sense of what you see,
+    <h2> Even though Hawking was affected by ALS, which is a fatal motor neuron disease, causing
+    the degeneration of nerve cells in the spinal cord and brain; he left behind a legacy.</h2>
+    <h1><i>"Remember to look up at the stars, and not down at your feet. Try to make sense of what you see,
     and what about what makes the universe exist. Be Curious, and however difficult life may seem,
-    there is always something you can do and succeed at."</h1>
-    <p> This was the last message Hawking wrote. </p>
+    there is always something you can do and succeed at."</i></h1>
+    <h2 class = "h2-final" style="color: violet"> Even with a life-changing neural disease, Hawking showed us that no matter who you are,
+    or where you're from, you can succeed in anything that you set your mind to. That speaks volumes to me; and that's why
+    I dedicated this website to him. </h2>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -108,7 +109,7 @@ to-do:
 
 <footer class="nav-footer">
     <ul>
-        <li><a href="#info-about-als">Info about ALS</a></li>
+        <li><a href="https://www.als.org/understanding-als/what-is-als">Info about ALS</a></li>
         <li><a href="#top">Return to top</a></li>
         <li><a href="2nd-page.html">Hawking's achievements</a></li>
     </ul>
