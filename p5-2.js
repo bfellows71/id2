@@ -75,8 +75,17 @@ function setup() {
 // draw
 function draw() {
     background(0);
+    fill(255);
+    textSize(35);
+    let canvasCenterX = width / 18;
+    let canvasCenterY = height / 5;
+    text('And think about what makes the universe exist? Be Curious, and however difficult life may seem,', canvasCenterX, canvasCenterY);
+    text('there is always something you can do and succeed at.', canvasCenterX + 100, canvasCenterY + 100);
+    text('Remember to look up at the stars, and not down at your feet. Try to make sense of what you see.', canvasCenterX - 65, canvasCenterY - 100);
+    text('- Stephen Hawking', canvasCenterX + 150, canvasCenterY + 179);
 
-    // display stars (dont need to update cuz they are static)
+
+     // display stars (dont need to update cuz they are static)
     for (let i = 0; i < stars.length; i++) {
         stars[i].display();
     }
